@@ -1,0 +1,5 @@
+c:\users\developer\documents\visual studio 2012\Projects\DQC.Genesta.Document.Management\DQC.Genesta.Document.Management\bin\Debug\DQC.Genesta.Document.Management.dll
+c:\users\developer\documents\visual studio 2012\Projects\DQC.Genesta.Document.Management\DQC.Genesta.Document.Management\bin\Debug\DQC.Genesta.Document.Management.pdb
+c:\users\developer\documents\visual studio 2012\Projects\DQC.Genesta.Document.Management\DQC.Genesta.Document.Management\obj\Debug\DQC.Genesta.Document.Management.csprojResolveAssemblyReference.cache
+c:\users\developer\documents\visual studio 2012\Projects\DQC.Genesta.Document.Management\DQC.Genesta.Document.Management\obj\Debug\DQC.Genesta.Document.Management.dll
+c:\users\developer\documents\visual studio 2012\Projects\DQC.Genesta.Document.Management\DQC.Genesta.Document.Management\obj\Debug\DQC.Genesta.Document.Management.pdb

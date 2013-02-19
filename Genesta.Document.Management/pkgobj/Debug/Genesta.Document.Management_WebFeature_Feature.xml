@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" ActivateOnDefault="FALSE" Hidden="TRUE" Id="9199fdb1-d4b7-4275-a576-5875c4bb5f9b" ReceiverAssembly="Genesta.Document.Management, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e868f13bde691496" ReceiverClass="Genesta.Document.Management.Features.WebFeature.WebFeatureEventReceiver" Scope="Web" Title="Genesta Document Management WebFeature" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="DefaultPageModule\Elements.xml" />
+    <ElementFile Location="DefaultPageModule\default.aspx" />
+    <ElementManifest Location="ArchiveList\Elements.xml" />
+    <ElementManifest Location="DocumentsList\Elements.xml" />
+    <ElementManifest Location="IssuesList\Elements.xml" />
+    <ElementManifest Location="RegisterList\Elements.xml" />
+    <ElementManifest Location="RegisterListDocuments\Elements.xml" />
+    <ElementManifest Location="MasterPageModule\Elements.xml" />
+    <ElementFile Location="MasterPageModule\frontpage.master" />
+  </ElementManifests>
+</Feature>

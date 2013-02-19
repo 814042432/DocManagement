@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="1017cccf-433a-4423-adc3-619a3113ee2a" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Genesta.Document.Management.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Genesta.Document.Management_SiteFeature\Feature.xml" />
+    <FeatureManifest Location="Genesta.Document.Management_WebFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

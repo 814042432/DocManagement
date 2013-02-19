@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Task (0x0108) -->
+  <ContentType ID="0x010800CE90F34D2BC14B029314F154143F789F" Name="Issue" Group="Document Management" Description="Create new Issue" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Name="LinkTitle" ReadOnly="TRUE" />
+      <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" DisplayName="$Resources:core,Assigned_To;" Name="AssignedTo" />
+      <FieldRef ID="{6570274A-8F37-408B-ADCD-CE65B8FE3DA3}" DisplayName="Status" Name="Status" />
+      <FieldRef ID="{476768DD-EA59-4777-BE63-D760F64BEC2C}" DisplayName="Related Document" Name="RelatedDocument" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

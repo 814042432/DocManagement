@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project Revision="1" Title="StruktonRail_SiteTemplate" ListDir="$Resources:core,lists_Folder;" xmlns:ows="Microsoft SharePoint" UIVersion="4">
+  <NavBars/>
+  <ListTemplates />
+  <DocumentTemplates />
+  <BaseTypes />
+  <Configurations>
+    <Configuration ID="0" Name="Publishing" MasterUrl="_catalogs/masterpage/frontpage.master">
+      <WebFeatures>
+        <!-- Web Portal Navigation Properties --><!--
+        <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+          <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+            <Property Key="InheritGlobalNavigation" Value="true"/>
+            <Property Key="InheritCurrentNavigation" Value="false"/>
+            <Property Key="GlobalIncludeSubSites" Value="false"/>
+            <Property Key="GlobalIncludePages" Value="false"/>
+            <Property Key="CurrentIncludeSubSites" Value="false"/>
+            <Property Key="CurrentIncludePages" Value="false"/>
+            <Property Key="ShowSiblings" Value="false"/>
+            <Property Key="OrderingMethod" Value="Automatic"/>
+            <Property Key="AutomaticSortingMethod" Value="CreatedDate"/>
+            <Property Key="SortAscending" Value="true"/>
+          </Properties>
+        </Feature>-->
+        <!-- TEA Genesta Design  -->
+        <Feature ID="8bf8fe30-11b6-43e3-9519-eb19ef16808b"/>
+        <!-- Document Management Webfeature  -->
+        <Feature ID="9199fdb1-d4b7-4275-a576-5875c4bb5f9b"/>
+      </WebFeatures>
+      <Modules />
+    </Configuration>
+  </Configurations>
+  <Modules />
+</Project>

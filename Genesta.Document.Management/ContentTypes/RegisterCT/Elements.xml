@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100EBEBBB792C1D426A8D75CCE2BDA26D6F" Name="Register" Group="Document Management" Description="Create new Register" Inherits="TRUE" Version="0">
+    <FieldRefs></FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x01010014443939D7EF4A52A72D0F0CC71AD6D4" Name="Document" Group="Document Management" Description="Create new Document" Inherits="TRUE" Version="0">
+    <FieldRefs></FieldRefs>
+  </ContentType>
+</Elements>

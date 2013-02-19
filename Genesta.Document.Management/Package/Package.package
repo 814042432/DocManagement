@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1017cccf-433a-4423-adc3-619a3113ee2a" solutionId="1017cccf-433a-4423-adc3-619a3113ee2a" resetWebServer="false" name="Genesta.Document.Management" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="78e14213-9389-4c5f-8685-3f6167e83036" />
+    <featureReference itemId="292494ed-ef1f-46dc-a82f-c23aa91cc6ff" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="8dc6f38d-8367-4541-960c-75ba9eb70acf" />
+  </projectItems>
+</package>

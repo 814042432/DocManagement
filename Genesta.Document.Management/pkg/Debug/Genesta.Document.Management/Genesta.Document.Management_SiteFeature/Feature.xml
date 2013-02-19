@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" ActivateOnDefault="FALSE" Id="a7c1f9f9-f42d-4f79-9af5-3e4c8573adeb" ReceiverAssembly="Genesta.Document.Management, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e868f13bde691496" ReceiverClass="Genesta.Document.Management.Features.SiteFeature.SiteFeatureEventReceiver" Scope="Site" Title="Genesta Document Management SiteFeature" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="DocumentManagementWebTemplate\Elements.xml" />
+    <ElementFile Location="DocumentManagementWebTemplate\onet.xml" />
+  </ElementManifests>
+</Feature>

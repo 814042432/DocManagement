@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WebTemplate
+    Name="DocumentManagementWebTemplate"
+    BaseTemplateName="STS"
+    BaseTemplateID="1"
+    BaseConfigurationID="0"
+    Title="Document Management"
+    Description=""
+    DisplayCategory="Genesta Templates"
+    ImageUrl="" />
+</Elements>

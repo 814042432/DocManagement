@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FCED76E-7BC3-4997-91D6-871A1EACC808}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Genesta.Document.Management</RootNamespace>
+    <AssemblyName>Genesta.Document.Management</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Constants.cs" />
+    <Compile Include="Code\TaxonomyHelper.cs" />
+    <Compile Include="Features\SiteFeature\SiteFeature.EventReceiver.cs">
+      <DependentUpon>SiteFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\WebFeature\WebFeature.EventReceiver.cs">
+      <DependentUpon>WebFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\ArchiveCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f8596fa7-c637-476a-b85f-d9015a2a033f}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\DocumentsCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{10aa30a1-1a14-441f-8829-fef886756666}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\IssuesCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{74f08be7-ef41-4273-bfba-388478c18798}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\RegisterCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{622a00ed-3328-4d5f-b787-43b2abb1d13a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\WebFeature\WebFeature.feature">
+      <FeatureId>{292494ed-ef1f-46dc-a82f-c23aa91cc6ff}</FeatureId>
+    </None>
+    <None Include="Features\SiteFeature\SiteFeature.feature">
+      <FeatureId>{78e14213-9389-4c5f-8685-3f6167e83036}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8dc6f38d-8367-4541-960c-75ba9eb70acf}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ArchiveList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a04e521c-ff44-4442-b50f-4f165d8138d0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\DocumentsList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d1d611d4-b6ca-489d-8c6f-9e1bf9b0b964}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\IssuesList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{30716909-0363-4c30-964b-b2754bbea16a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\RegisterListDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1b8955e6-4d35-4504-a67a-1525b65d89ff}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\RegisterList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5372a9dd-b3a7-4465-90b4-e78a01a234b1}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\DefaultPageModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33bf764b-3003-47d2-bdc7-5d5553f22318}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPageModule\frontpage.master" />
+    <None Include="Modules\MasterPageModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{621e8d7e-7267-4dd3-b557-8c52d4ac89c7}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{1017cccf-433a-4423-adc3-619a3113ee2a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebTemplates\DocumentManagementWebTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac3c1b45-92e7-40c1-8e8a-dc569e776c26}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\Genesta.Document.Management\" />
+    <Folder Include="SiteColumns\" />
+    <Folder Include="WebParts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentTypes\ArchiveCT\Elements.xml" />
+    <Content Include="ContentTypes\DocumentsCT\Elements.xml" />
+    <Content Include="ContentTypes\IssuesCT\Elements.xml" />
+    <Content Include="ContentTypes\RegisterCT\Elements.xml" />
+    <Content Include="Features\WebFeature\WebFeature.Template.xml">
+      <DependentUpon>WebFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SiteFeature\SiteFeature.Template.xml">
+      <DependentUpon>SiteFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Lists\ArchiveList\Elements.xml" />
+    <Content Include="Lists\DocumentsList\Elements.xml" />
+    <Content Include="Lists\IssuesList\Elements.xml" />
+    <Content Include="Lists\RegisterListDocuments\Elements.xml" />
+    <Content Include="Lists\RegisterList\Elements.xml" />
+    <Content Include="Modules\DefaultPageModule\default.aspx" />
+    <Content Include="Modules\DefaultPageModule\Elements.xml" />
+    <Content Include="Modules\MasterPageModule\Elements.xml" />
+    <Content Include="WebTemplates\DocumentManagementWebTemplate\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebTemplates\DocumentManagementWebTemplate\onet.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

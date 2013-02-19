@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x010100C26B44A33D684EEC8A35A36F0433AC3A" Name="Archive" Group="Document Management" Description="Create new Archive" Inherits="TRUE" Version="0">
+    <FieldRefs>
+    </FieldRefs>
+  </ContentType>
+</Elements>

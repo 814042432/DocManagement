@@ -1,0 +1,1 @@
+bin\Debug\Genesta.Document.Management.wsp
